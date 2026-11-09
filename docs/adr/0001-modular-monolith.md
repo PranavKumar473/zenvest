@@ -38,3 +38,4 @@ ArchUnit and Spring Modulith's `ApplicationModules.verify()` enforce these bound
 - All modules scale together — not an issue at v1 traffic.
 - A bug in one module can crash the whole app — mitigated by defensive coding and health checks.
 - Shared schema — mitigated by schema ownership rules (each module owns its own tables; Flyway migrations are tagged by module).
+

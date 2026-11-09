@@ -40,3 +40,4 @@ Key reasons:
 - Steeper initial learning curve versus Python for the developer.
 - Slower cold-start than FastAPI — mitigated by keeping the app always running (single VM, Docker restart policy).
 - Python data-science libraries (pandas, scipy) are unavailable — analytics implemented in pure Java with unit-tested formulas.
+

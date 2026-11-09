@@ -114,3 +114,4 @@ git commit → runs .git/hooks/pre-commit → gitleaks protect --staged
 ### Q3: What is a pre-commit hook and what is the difference between `gitleaks protect --staged` and `gitleaks detect`?
 
 **A:** A pre-commit hook is a shell script Git automatically executes before recording a commit. If it exits with a non-zero code, the commit is aborted. `gitleaks protect --staged` scans only the files you've staged with `git add` — this is fast and prevents secrets from entering even a local commit. `gitleaks detect` scans the full repository history — useful in CI to audit the entire git log. We use `protect --staged` in the pre-commit hook for speed, and `gitleaks detect` in the CI pipeline for full coverage.
+

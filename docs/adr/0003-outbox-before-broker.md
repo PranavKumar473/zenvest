@@ -37,3 +37,4 @@ We will **not** introduce Kafka, RabbitMQ, or any external broker in v1.
 - If Zenvest grows to high-volume event streaming, we will add a broker and migrate. The outbox table schema is designed to be forward-compatible with debezium CDC, making future migration straightforward.
 
 **Migration path:** when throughput demands it, replace the poller with a Debezium connector that reads the outbox table and publishes to Kafka — zero changes to the business modules.
+

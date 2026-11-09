@@ -56,3 +56,4 @@ volumes:
     name: zenvest_postgres_dev_data
   redis_dev_data:
     name: zenvest_redis_dev_data
+
