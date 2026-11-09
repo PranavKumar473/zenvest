@@ -1,0 +1,69 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Secrets & Environment Files (STRICTLY NEVER COMMIT!)
+*.env
+*.env.*
+!*.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+
+# Legacy Reference Code (git-ignored per requirements)
+reference/
+
+# Java / Maven Build Output
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+**/.flattened-pom.xml
+
+# Node / Frontend Build Output
+**/node_modules/
+**/dist/
+**/build/
+**/.next/
+**/.turbo/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDEs & Editors
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+bin/
+
+# Testing & Coverage Outputs
+**/coverage/
+**/jacoco.exec
+**/jacoco-it.exec
+**/playwright-report/
+**/test-results/
+
+# Log Files
+*.log
+**/logs/
+
+# Database / Local Docker Storage
+*.sqlite
+*.sqlite3
+**/infra/data/

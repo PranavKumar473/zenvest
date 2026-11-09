@@ -1,0 +1,17 @@
+title = "Zenvest Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Global allowlist for placeholder test credentials"
+paths = [
+  '''^\.env\.example$''',
+  '''^backend/\.env\.example$''',
+  '''^infra/\.env\.example$'''
+]
+regexes = [
+  '''change-me''',
+  '''placeholder''',
+  '''example\.com'''
+]
