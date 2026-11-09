@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ZenvestBackendApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ZenvestBackendApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(ZenvestBackendApplication.class, args);
+  }
 }
